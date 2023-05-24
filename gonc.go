@@ -37,7 +37,7 @@ var bufsiz int = 4 * 1048576
 func main() {
 
 	flag.Usage = func() {
-		fmt.Fprintf(flag.Output(), "Usage: %s [options] server:port\nOptions: (defaults in '[ ]')\n", os.Args[0])
+		fmt.Fprintf(flag.CommandLine.Output(), "Usage: %s [options] server:port\nOptions: (defaults in '[ ]')\n", os.Args[0])
 		flag.PrintDefaults()
 	}
 
